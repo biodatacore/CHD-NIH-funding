@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+data/raw/
+data/work/*.pkl
+data/work/*.rds
+*.xlsx.bak
+.venv/

@@ -1,0 +1,6 @@
+# Python packages needed to reproduce the v2.4 fiscal-year totals
+# (python3 R/14_v2_run.py from the repository root).
+pandas>=2.2
+numpy
+openpyxl
+pyreadr
