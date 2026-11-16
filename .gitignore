@@ -9,3 +9,4 @@ data/work/*.pkl
 data/work/*.rds
 *.xlsx.bak
 .venv/
+outputs/v2.4/figures_tables/_tables.pkl

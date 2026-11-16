@@ -49,6 +49,33 @@ to reproduce the v2.4 fiscal-year totals. Raw ExPORTER bulk files are not
 shipped; see `data/FETCH.md` if you want to rebuild the pool from public NIH
 exports. Do not run `assemble.py`.
 
+## Reproduce the v2.4 shares, mortality comparison, and figures
+
+From the repository root, with the packages in `REQUIREMENTS.txt` (including
+statsmodels, matplotlib, and Pillow). Arial is used for the figures when it
+is installed:
+
+```bash
+python3 R/21_v24_shares.py
+python3 R/22_v24_figures.py
+```
+
+or `bash R/run_v24_shares.sh`. `R/21_v24_shares.py` first rebuilds the v1
+keyword shares from the shipped yearly denominators and checks them against
+`data/work/v1_expected_*.csv` (including CHD as a share of NIH CVD funding
+2.2124% in FY2013 and 2.1654% in FY2025, and as a share of all NIH funding
+0.2257% to 0.2033%). The v2.4 workbook is written only if that check passes.
+
+Outputs go to `outputs/v2.4/figures_tables/`: yearly dollars and shares, the
+age split (dollars and share of CHD dollars, with APC and CAGR), overlap with
+the RCDC CHD category, a funding-vs-mortality comparison using the shipped
+aggregated CDC WONDER death counts, a key-numbers table, and figures
+(`Fig1`–`Fig8` and `Fig_main_two_panel`, PNG + PDF, and TIF for the main
+two-panel figure). Classification rules are not changed. The full grant
+universe is not required; denominators and flags are in `data/work/` and
+`data/wonder/wonder_long.csv` (see `data/README.md`).
+
+
 ## Inclusion and exclusion rules (v2.4)
 
 The primary definition is a two-tier keyword classifier applied to the title

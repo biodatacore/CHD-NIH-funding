@@ -51,3 +51,15 @@ User-approved after the V4 review. v2.3 rules saved as R/13_v2_rules_v2.3.py; v2
 - Unchanged: v2.3 exclusions (pediatric PH, heart block, noncompaction) and inclusions (coarctation, PDA, SVAS, F30/F31 anchor).
 - Portfolio impact is two cores (5 project-years, $2.42M): the PKD grant (FY2024–2026, Tier 1 → not CHD) and the stomach-laterality R21 (FY2023–2024, Tier 2 → not CHD). No new false negatives in V3, V4, the v2 fresh set or the 833-grant review; both dropped review-set grants were already reviewer No (corrected false positives).
 - Outputs: outputs/v2.4/chd_v2_funding.xlsx, chd_v2_insample_rescore.xlsx, chd_v3_review_scoring_v2.4.xlsx, chd_v4_review_scoring_v2.4.xlsx, chd_v2.4_score_v2set.xlsx (combined estimate), chd_v2.4_label_changes.xlsx.
+
+## v2.4 shares, mortality comparison, and figures (2026-11-16)
+
+Adds yearly v2.4 combined CHD shares of NIH CVD funding and of all NIH funding,
+age-group dollars and shares with APC and CAGR (FY2013–2025), overlap with the
+RCDC “Congenital Heart Disease” category, a funding-vs-mortality comparison
+using the cached CDC WONDER death counts, figures, and a key-numbers table.
+Classifier rules are unchanged. Scripts: `R/21_v24_shares.py`,
+`R/22_v24_figures.py`, `R/run_v24_shares.sh`. Outputs:
+`outputs/v2.4/figures_tables/`. Denominator and overlap inputs are the compact
+tables in `data/work/` and the aggregated series `data/wonder/wonder_long.csv`.
+

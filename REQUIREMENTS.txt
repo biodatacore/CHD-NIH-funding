@@ -1,6 +1,11 @@
 # Python packages needed to reproduce the v2.4 fiscal-year totals
-# (python3 R/14_v2_run.py from the repository root).
+# (python3 R/14_v2_run.py from the repository root) and the share / figure
+# tables (python3 R/21_v24_shares.py and python3 R/22_v24_figures.py).
+# Arial is used for the figures when the font is installed on the system.
 pandas>=2.2
 numpy
 openpyxl
 pyreadr
+statsmodels
+matplotlib
+Pillow

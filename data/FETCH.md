@@ -17,3 +17,10 @@ public NIH data that are too large to keep in this repository.
 
 Investigator-name columns are never required and should not be kept in any
 files you add to a public copy of this repository.
+
+The compact yearly NIH/CVD denominators used by `R/21_v24_shares.py` live in
+`data/work/nih_cvd_yearly.csv`. Rebuilding those denominators from scratch
+requires the full grant universe and CVD flag used by `R/07_cvd.R`; that
+universe is not shipped. The shipped yearly file is enough to reproduce the
+share and figure tables.
+

@@ -38,9 +38,31 @@ Blinded review workbooks and answer keys live under `outputs/` (v1 833-grant
 review, priority and round-2 rechecks, the v2 200-grant set, the V3 set, and
 the V4 set). Final v2.4 scoring and funding tables are in `outputs/v2.4/`.
 
+
+## Share, mortality, and figure tables (v2.4)
+
+The scripts `R/21_v24_shares.py` and `R/22_v24_figures.py` do not need the full
+NIH universe. They read these compact, de-identified tables (no investigator
+names):
+
+- `data/work/nih_cvd_yearly.csv` — yearly NIH and CVD denominators and RCDC
+  CHD totals, aggregated from the same cached grant universe used by
+  `R/07_cvd.R`.
+- `data/work/v24_cv_flags.csv` — the CVD flag for each project-year in
+  `outputs/v2.4/chd_v2_funding.xlsx`.
+- `data/work/rcdc_chd_projects.csv` — RCDC “Congenital Heart Disease”
+  project-years (FY, full project number, dollars) for the overlap tables.
+- `data/work/v1_keyword_yearly.csv` and `v1_keyword_age.csv` — v1 keyword
+  numerators used in the self-check and the v1 comparison sheet.
+- `data/work/v1_expected_*.csv` — v1 ground-truth shares, trends, and
+  mortality counts used by the self-check.
+- `data/wonder/wonder_long.csv` — aggregated CDC WONDER death counts (not the
+  raw form or XML caches). 2013–2017 use the bridged-race final files; 2018–
+  2024 use the single-race final files. No refetch is performed.
+
 ## Not included
 
 - Full NIH ExPORTER / RePORTER bulk extracts and any workbook intermediates
-- CDC WONDER raw caches
+- CDC WONDER raw form and XML caches (the aggregated long series in `data/wonder/wonder_long.csv` is shipped)
 - Older large working pickles and logs
 - Manuscript drafts or correspondence
