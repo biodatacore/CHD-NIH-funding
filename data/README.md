@@ -13,6 +13,24 @@ The file is a pandas pickle (protocol 4) compressed with gzip. It is well under
 GitHub's 100 MB file limit, so it is not split into parts. `R/14_v2_run.py` reads
 `data/work/v2_pool.pkl` if that file exists, otherwise `data/work/v2_pool.pkl.gz`.
 
+`data/work/v2_pool.tsv.xz` is a tab-separated, xz-compressed export of the same
+pool for the R pipeline (`R/23_v24_classify.R`). It was generated from the
+pickle and checked row-for-row (10,071 rows; title and abstract/public-health
+text checksums match). Use `utils::read.delim()` with `strip.white = FALSE` to
+load it; some title fields have leading or trailing spaces that must be kept.
+`data/work/v2.4_classified_labels.csv.xz` holds the v2.4 classification labels
+(no text) used by the R-vs-Python comparison.
+
+## Bootstrap resampling indices
+
+`data/bootstrap/*.idx.xz` are 2000-by-n matrices of 0-based row indices
+(little-endian int32, preceded by an 8-byte nrow/ncol header, xz-compressed).
+They are the draws from NumPy `default_rng(1)` / `Generator.choice` used by
+the Python scorer (in-sample, V2 set, V3, V4, and the combined estimate). The
+R scorer reads these files so confidence intervals match the shipped Python
+tables. Regenerating draws with R's `sample()` would produce different
+intervals; the point estimates would still match.
+
 This pool is sufficient to reproduce the v2.4 fiscal-year totals and the
 in-sample / review-set scores. The full NIH universe and ExPORTER bulk files are
 not included (they are large public files and are not required for the v2.4

@@ -9,3 +9,6 @@ pyreadr
 statsmodels
 matplotlib
 Pillow
+
+# R reproduction uses REQUIREMENTS-R.txt (R 4.3+; readxl, openxlsx).
+# The entry point is Rscript R/run_v2.4_all.R.

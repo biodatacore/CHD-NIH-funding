@@ -1,0 +1,10 @@
+# R packages needed to reproduce the v2.4 results
+# (Rscript R/run_v2.4_all.R from the repository root).
+# Tested on R 4.5.3 (2026-03-11). R 4.3 or later should work.
+# Arial is used for the figures when the font is installed on the system
+# (cairo devices use fontconfig; PDFs embed Arial when it is available).
+#
+# Install with:
+#   install.packages(c("readxl", "openxlsx"))
+readxl
+openxlsx

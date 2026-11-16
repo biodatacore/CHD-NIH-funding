@@ -63,3 +63,20 @@ Classifier rules are unchanged. Scripts: `R/21_v24_shares.py`,
 `outputs/v2.4/figures_tables/`. Denominator and overlap inputs are the compact
 tables in `data/work/` and the aggregated series `data/wonder/wonder_long.csv`.
 
+## v2.4 R reproduction (2026-11-16)
+
+Adds an R port of the v2.4 Python steps so the published classification,
+funding tables, validation scores, share/mortality workbook, and figures can
+be reproduced with `Rscript R/run_v2.4_all.R`. Classifier rules are unchanged.
+Python scripts remain in place as an alternative.
+
+- Scripts: `R/23_v24_classify.R`, `R/24_v24_funding.R`, `R/25_v24_score.R`,
+  `R/26_v24_shares.R`, `R/27_v24_figures.R`, `R/chd_v24_metrics.R`, and the
+  entry point `R/run_v2.4_all.R`.
+- R-readable pool: `data/work/v2_pool.tsv.xz`, generated from
+  `data/work/v2_pool.pkl.gz` and verified row-for-row. The pickle is kept.
+- Bootstrap indices: `data/bootstrap/*.idx.xz` are the NumPy `default_rng(1)`
+  resampling draws used by the Python scorer, so R confidence intervals match
+  the shipped tables.
+- Default R outputs go to `outputs/v2.4/r/` and do not overwrite the shipped
+  Python tables. Comparison: `tests/r_vs_python_report.md`.

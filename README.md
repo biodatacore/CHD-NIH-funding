@@ -17,18 +17,59 @@ investigator names do not appear in code, documentation, or shipped tables.
 NIH abstract and public-health-relevance text is kept verbatim. Reviewer
 initials have been replaced with generic codes (R1, R2, R3).
 
-## Reproduce the v2.4 fiscal-year totals
+## Reproduce the v2.4 results
 
-From the repository root, with Python 3.11+ and the packages in
-`REQUIREMENTS.txt` (pandas ≥ 2.2, numpy, openpyxl, pyreadr):
+From the repository root, with R 4.3+ (tested on 4.5.3) and the packages in
+`REQUIREMENTS-R.txt` (readxl, openxlsx). Arial is used for the figures when it
+is installed:
+
+```bash
+Rscript R/run_v2.4_all.R
+```
+
+This classifies the CHD-signal pool at v2.4, writes the funding workbook and
+the in-sample / V3 / V4 / combined-estimate scores, rebuilds the share and
+mortality tables (including the v1 self-check), and renders the figures.
+Outputs go to `outputs/v2.4/r/` by default so the shipped tables in
+`outputs/v2.4/` are not overwritten. To write elsewhere:
+
+```bash
+CHD_V2_OUT=/tmp/chd_v24_repro \
+CHD_FIG_OUT=/tmp/chd_v24_repro/figures_tables \
+CHD_REF_OVERRIDES=data/validation/v2.3_reference_overrides.xlsx \
+Rscript R/run_v2.4_all.R
+```
+
+The R classifier reads `data/work/v2_pool.tsv.xz`, a tab-separated, xz-compressed
+export of the shipped pickle `data/work/v2_pool.pkl.gz`, verified row-for-row
+(title and text checksums match). Bootstrap confidence intervals use the
+resampling index matrices in `data/bootstrap/` (drawn with NumPy
+`default_rng(1)` in the Python pipeline) so the R intervals match the shipped
+tables. A comparison of an R run against the shipped Python outputs is in
+`tests/r_vs_python_report.md`.
+
+Earlier R scripts (`R/00_setup.R`–`R/12_*.R`, `config.R`) document the v1
+classifier, CVD denominator, and CDC WONDER comparison. They are not required
+to reproduce the v2.4 totals. Raw ExPORTER bulk files are not shipped; see
+`data/FETCH.md` if you want to rebuild the pool from public NIH exports. Do
+not run `assemble.py`.
+
+### Python alternative
+
+The same v2.4 steps can be run with Python 3.11+ and the packages in
+`REQUIREMENTS.txt` (pandas ≥ 2.2, numpy, openpyxl, pyreadr, statsmodels,
+matplotlib, and Pillow):
 
 ```bash
 python3 R/14_v2_run.py
+python3 R/21_v24_shares.py
+python3 R/22_v24_figures.py
 ```
 
-`R/14_v2_run.py` reads `data/work/v2_pool.pkl` or, if that file is absent, the
-shipped `data/work/v2_pool.pkl.gz`. It writes `outputs/v2.4/chd_v2_funding.xlsx`
-and the in-sample / review-set scoring workbooks (the review files those steps
+or `bash R/run_v24_shares.sh` for the last two steps. `R/14_v2_run.py` reads
+`data/work/v2_pool.pkl` or, if that file is absent, the shipped
+`data/work/v2_pool.pkl.gz`. It writes `outputs/v2.4/chd_v2_funding.xlsx` and
+the in-sample / review-set scoring workbooks (the review files those steps
 need are already in `data/validation/` and `outputs/`). To write a fresh copy
 without overwriting the shipped tables:
 
@@ -43,37 +84,19 @@ The `Yearly` sheet of the new workbook should match
 A pandas 3.x environment is preferred; the shipped pickle uses protocol 4 with
 plain Python dtypes.
 
-Earlier R scripts (`R/00_setup.R`–`R/12_*.R`, `config.R`) document the v1
-classifier, CVD denominator, and CDC WONDER comparison. They are not required
-to reproduce the v2.4 fiscal-year totals. Raw ExPORTER bulk files are not
-shipped; see `data/FETCH.md` if you want to rebuild the pool from public NIH
-exports. Do not run `assemble.py`.
-
-## Reproduce the v2.4 shares, mortality comparison, and figures
-
-From the repository root, with the packages in `REQUIREMENTS.txt` (including
-statsmodels, matplotlib, and Pillow). Arial is used for the figures when it
-is installed:
-
-```bash
-python3 R/21_v24_shares.py
-python3 R/22_v24_figures.py
-```
-
-or `bash R/run_v24_shares.sh`. `R/21_v24_shares.py` first rebuilds the v1
-keyword shares from the shipped yearly denominators and checks them against
-`data/work/v1_expected_*.csv` (including CHD as a share of NIH CVD funding
-2.2124% in FY2013 and 2.1654% in FY2025, and as a share of all NIH funding
-0.2257% to 0.2033%). The v2.4 workbook is written only if that check passes.
-
-Outputs go to `outputs/v2.4/figures_tables/`: yearly dollars and shares, the
-age split (dollars and share of CHD dollars, with APC and CAGR), overlap with
-the RCDC CHD category, a funding-vs-mortality comparison using the shipped
-aggregated CDC WONDER death counts, a key-numbers table, and figures
-(`Fig1`–`Fig8` and `Fig_main_two_panel`, PNG + PDF, and TIF for the main
-two-panel figure). Classification rules are not changed. The full grant
-universe is not required; denominators and flags are in `data/work/` and
-`data/wonder/wonder_long.csv` (see `data/README.md`).
+`R/21_v24_shares.py` first rebuilds the v1 keyword shares from the shipped
+yearly denominators and checks them against `data/work/v1_expected_*.csv`
+(including CHD as a share of NIH CVD funding 2.2124% in FY2013 and 2.1654% in
+FY2025, and as a share of all NIH funding 0.2257% to 0.2033%). The v2.4
+workbook is written only if that check passes. Python figure and share outputs
+go to `outputs/v2.4/figures_tables/`: yearly dollars and shares, the age split
+(dollars and share of CHD dollars, with APC and CAGR), overlap with the RCDC
+CHD category, a funding-vs-mortality comparison using the shipped aggregated
+CDC WONDER death counts, a key-numbers table, and figures (`Fig1`–`Fig8` and
+`Fig_main_two_panel`, PNG + PDF, and TIF for the main two-panel figure).
+Classification rules are not changed. The full grant universe is not required;
+denominators and flags are in `data/work/` and `data/wonder/wonder_long.csv`
+(see `data/README.md`).
 
 
 ## Inclusion and exclusion rules (v2.4)
