@@ -30,7 +30,7 @@ the shipped indices, the intervals match.
 | Classification, all 10,071 project-years | 0 differences on `tier`, `t2_route`, `t1_drop`, `age_v2`, `chd_v2`, `tier1`, `tier2`, `kw`, and aim-gate counts `t1_n_aim`, `t1_n_subst`, `t1_n_assoc`. Combined 2,826 (2,255 Tier 1, 571 Tier 2). |
 | Funding workbook sheets | Same nine sheets. Yearly, Age_summary, Age_USD_M_combined / pct / tier1 / v1, Tier2_routes, and Tier1_drops: 0 differences at 1e-9 (rounded sheets identical). |
 | Funding Projects | 2,860 / 2,860 rows, same order; USD, tier, kw, rcdc, age_v2, and titles match. |
-| In-sample Metrics | 84 / 84 rows; estimates and CIs agree to ~1e-15 when aligned on Label / Definition / Weighting / Metric. |
+| In-sample Metrics | 84 / 84 rows; estimates and CIs agree to ~1e-15 when aligned on Label / Reviewer CHD = / Definition / Weighting / Metric. |
 | V2 set Summary | 28 / 28; estimates and CIs to ~1e-15. |
 | Combined estimate | 14 / 14, nX = 876; estimates and CIs to ~1e-15. |
 | V3 Summary | 28 / 28; estimates and CIs to ~1e-15. |

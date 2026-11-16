@@ -156,8 +156,13 @@ def main():
         for sh in sheets:
             py = pd.read_excel(py_p, sheet_name=sh)
             r = pd.read_excel(r_p, sheet_name=sh)
-            # align on metric keys if present
-            key = [c for c in ["Reviewer CHD =", "Frame", "Weighting", "Metric"] if c in py.columns]
+            # In-sample rows share Label / Definition / Weighting / Metric
+            # across reviewer definitions, so Reviewer CHD = is part of the key.
+            if name == "In-sample":
+                key_cols = ["Label", "Reviewer CHD =", "Definition", "Weighting", "Metric"]
+            else:
+                key_cols = ["Reviewer CHD =", "Frame", "Weighting", "Metric"]
+            key = [c for c in key_cols if c in py.columns]
             if key:
                 m = py.merge(r, on=key, suffixes=("_py", "_r"), how="outer", indicator=True)
                 both = m[m["_merge"] == "both"]
@@ -181,13 +186,13 @@ def main():
     # Shares, APC, key numbers, self-check
     py_sh = pydir / "figures_tables" / "chd_v2.4_shares_mortality.xlsx"
     r_sh = rdir / "figures_tables" / "chd_v2.4_shares_mortality.xlsx"
-    for sh, tol in [("Trends", 1e-6), ("Key_numbers", 1e-6), ("Yearly_v2.4", 1e-9)]:
+    for sh, tol in [("Trends_funding", 1e-6), ("Key_numbers", 1e-6), ("Yearly_v2.4", 1e-9)]:
         out, py, r, _ = sheet_compare(py_sh, r_sh, sh, keys=["item"] if sh == "Key_numbers" and "item" in pd.read_excel(py_sh, sh).columns else None, tol=tol)
         if sh == "Key_numbers":
             rec("Key numbers 546/546",
                 out.get("ok", False) or (out["py_rows"] == out["r_rows"] == 546 and max(out["maxabs"].values() or [0]) <= 1e-6),
                 f"rows py={out['py_rows']} r={out['r_rows']}; maxabs numeric {max(out['maxabs'].values()) if out['maxabs'] else 0}")
-        elif sh == "Trends":
+        elif sh == "Trends_funding":
             # APC / CAGR columns
             py = pd.read_excel(py_sh, sh)
             r = pd.read_excel(r_sh, sh)
