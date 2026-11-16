@@ -17,7 +17,90 @@ investigator names do not appear in code, documentation, or shipped tables.
 NIH abstract and public-health-relevance text is kept verbatim. Reviewer
 initials have been replaced with generic codes (R1, R2, R3).
 
-## Reproduce the v2.4 results
+## Reproduce from scratch in R
+
+A naive analyst can clone this repository and rebuild every v2.4 result
+from the de-identified files shipped in it. No NIH ExPORTER bulk download,
+no RePORTER API key, and no network access are required (CDC WONDER XML
+is shipped; do not pass `--refetch` unless you intend to query WONDER).
+Do not run `assemble.py`.
+
+**R version.** Tested on R 4.5.3 (2026-03-11). R 4.3 or later should work.
+
+**Packages.** Install the packages listed in `REQUIREMENTS-R.txt`:
+
+```r
+install.packages(c("data.table", "stringi", "jsonlite", "ggplot2", "readxl", "openxlsx"))
+```
+
+`xml2` and `curl` are needed only to refetch CDC WONDER tables. Arial is
+used for the figures when it is installed.
+
+**Single command** (from the repository root):
+
+```bash
+Rscript R/run_all_v2.4.R
+```
+
+This loads `data/shipped/` (MD5-checked), rebuilds the NIH/CVD yearly
+denominators, the RCDC CHD project list, the CHD-signal pool, the v1
+keyword tables, and the WONDER long table, then runs the v2.4 classifier,
+funding workbook, validation scores, share/mortality tables, and figures.
+
+**Expected runtime.** About 3 minutes on a recent machine (2.3 minutes in
+the reference run; allow up to 10–15 minutes on a slower laptop). The exact
+time is printed at the end of the run. After it finishes:
+
+```bash
+Rscript tests/test_v24_expected.R
+```
+
+The test reports PASS/FAIL for each expected value (denominators, v1
+tables, and the 546 key numbers) and an OVERALL line. A comparison of
+the R outputs against the shipped Python tables is:
+
+```bash
+python3 tests/compare_r_vs_python.py
+```
+
+**Where outputs land.** Intermediate tables are written under `data/work/`
+and `data/wonder/wonder_long.csv`. The v2.4 workbooks and figures go to
+`outputs/v2.4/r/` and `outputs/v2.4/r/figures_tables/` by default so the
+shipped Python tables in `outputs/v2.4/` are not overwritten.
+
+**Expected headline values** (v2.4 combined CHD, nominal dollars; FY2026
+is a partial year retrieved 20 October 2026 and is excluded from trends):
+
+- FY2013: $74.209262 million (146 project-years)
+- Peak: $119.646064 million in FY2023 (244 project-years)
+- FY2025: $104.951853 million (215 project-years)
+- CHD dollars APC 3.920915% (CAGR 2.930559%, p = 0.000107722) over FY2013–2025
+- CHD as a share of NIH CVD funding, APC −0.427446%
+- CHD as a share of all NIH funding, APC −0.969125%
+
+The v1 self-check (CHD as a share of NIH CVD funding 2.2124% in FY2013
+and 2.1654% in FY2025; of all NIH funding 0.2257% to 0.2033%) must report
+ALL CHECKS PASSED.
+
+To write the v2.4 outputs somewhere else:
+
+```bash
+CHD_V2_OUT=/tmp/chd_v24_repro \
+CHD_FIG_OUT=/tmp/chd_v24_repro/figures_tables \
+CHD_REF_OVERRIDES=data/validation/v2.3_reference_overrides.xlsx \
+Rscript R/run_all_v2.4.R
+```
+
+The earlier entry point `Rscript R/run_v2.4_all.R` still runs only the
+v2.4 classifier and downstream tables, starting from the (re)built
+intermediates in `data/work/` and `data/wonder/`.
+
+## Reproduce the v2.4 results from shipped intermediates
+
+If the intermediate tables in `data/work/` and `data/wonder/wonder_long.csv`
+are already present, the v2.4 classifier and downstream tables can be
+run on their own.
+
 
 From the repository root, with R 4.3+ (tested on 4.5.3) and the packages in
 `REQUIREMENTS-R.txt` (readxl, openxlsx). Arial is used for the figures when it
@@ -50,9 +133,10 @@ tables. A comparison of an R run against the shipped Python outputs is in
 
 Earlier R scripts (`R/00_setup.R`–`R/12_*.R`, `config.R`) document the v1
 classifier, CVD denominator, and CDC WONDER comparison. They are not required
-to reproduce the v2.4 totals. Raw ExPORTER bulk files are not shipped; see
-`data/FETCH.md` if you want to rebuild the pool from public NIH exports. Do
-not run `assemble.py`.
+once `R/run_all_v2.4.R` has rebuilt the intermediates. The de-identified NIH
+universe used for those intermediates is in `data/shipped/`. See `data/FETCH.md`
+only if you want to rebuild that extract from public NIH exports. Do not run
+`assemble.py`.
 
 ### Python alternative
 
@@ -94,9 +178,8 @@ go to `outputs/v2.4/figures_tables/`: yearly dollars and shares, the age split
 CHD category, a funding-vs-mortality comparison using the shipped aggregated
 CDC WONDER death counts, a key-numbers table, and figures (`Fig1`–`Fig8` and
 `Fig_main_two_panel`, PNG + PDF, and TIF for the main two-panel figure).
-Classification rules are not changed. The full grant universe is not required;
-denominators and flags are in `data/work/` and `data/wonder/wonder_long.csv`
-(see `data/README.md`).
+Classification rules are not changed. Denominators and flags in `data/work/` and `data/wonder/wonder_long.csv`
+can also be rebuilt from `data/shipped/` (see `data/README.md`).
 
 
 ## Inclusion and exclusion rules (v2.4)

@@ -739,7 +739,7 @@ README_ROWS <- data.frame(
   Text = c(
     "v2.4 combined (Tier 1 + Tier 2) CHD funding shares of NIH CVD and of all NIH, age split, APCs, and a funding-vs-mortality comparison. New outputs only; v1 and earlier v2.x files were not overwritten.",
     "v2.4 combined = Tier 1 CHD-focused + Tier 2 CHD-related basic/developmental science, from outputs/v2.4/chd_v2_funding.xlsx (Projects sheet). Rules were not changed in this run.",
-    "Yearly NIH and CVD denominators in data/work/nih_cvd_yearly.csv were aggregated from the same cached grant universe used by R/07_cvd.R (one record per full project number per fiscal year, parent-award total cost, and the same CVD flag). The full universe is not shipped. assemble.py was not run.",
+    "Yearly NIH and CVD denominators in data/work/nih_cvd_yearly.csv were aggregated from the same cached grant universe used by R/07_cvd.R (one record per full project number per fiscal year, parent-award total cost, and the same CVD flag). The de-identified NIH IC project-year universe and v1 CVD flags used for these denominators are shipped in data/shipped/ and rebuilt by R/run_all_v2.4.R. assemble.py was not run.",
     "Numerator = v2.4 combined projects that also meet the CVD definition (nested). CHDall % of CVD (all combined dollars / CVD) is also reported.",
     "Nominal parent-award total cost (direct + indirect). The v1 pipeline did not inflation-adjust; no deflator series is included.",
     "Partial fiscal year (records retrieved 2026-10-20). Shown in yearly tables and figures (lighter) but excluded from APC/CAGR (FY2013-2025), matching the FY2013-2025 window used for the v1 tables.",

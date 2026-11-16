@@ -25,7 +25,15 @@
 #' Output: data/work/C.rds (G plus flags), data/work/rules.txt
 source("R/00_setup.R")
 G <- readRDS(wp("G.rds"))
-G[, t_cardi := hit(title, "(heart|cardi)")]
+# Recompute t_cardi from the title when a title is present. Shipped G.rds
+# already carries t_cardi for the full universe (titles are shipped only for
+# CHD-signal candidates, to avoid investigator names in supplement titles).
+if (!"t_cardi" %in% names(G)) {
+  G[, t_cardi := hit(title, "(heart|cardi)")]
+} else if ("title" %in% names(G)) {
+  has <- !is.na(G$title) & nzchar(G$title)
+  if (any(has)) G[has, t_cardi := hit(title, "(heart|cardi)")]
+}
 G[, kw := t_str >= 1 | s_str >= 3 | (s_str >= 2 & s_weak >= 2) | (s_str >= 1 & (t_pedcard | (t_ped & t_cardi)))]
 G[, rcdc_avail := FY %in% 2016:2025]
 G[, union := kw | (rcdc & rcdc_avail)]

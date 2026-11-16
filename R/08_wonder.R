@@ -19,10 +19,14 @@
 #' strict subset of the denominator (a CHD-mention death can have a non-CVD underlying cause).
 #' WONDER suppresses counts 1-9; such cells are recorded as NA and never imputed.
 #' Raw XML responses are saved in data/wonder/. Usage: Rscript R/08_wonder.R [--refetch]
+#' With the XML already shipped, use --parse-only (or CHD_WONDER_PARSE_ONLY=1)
+#' to rebuild data/wonder/wonder_long.csv and skip the v1 workbook/figures.
 source("R/00_setup.R")
-suppressMessages(library(xml2))
 WDIR <- "data/wonder"; dir.create(WDIR, showWarnings = FALSE)
 refetch <- "--refetch" %in% commandArgs(trailingOnly = TRUE)
+parse_only <- "--parse-only" %in% commandArgs(trailingOnly = TRUE) ||
+  identical(Sys.getenv("CHD_WONDER_PARSE_ONLY"), "1")
+if (refetch) suppressMessages(library(xml2))
 URL <- function(db) paste0("https://wonder.cdc.gov/controller/datarequest/", db)
 
 #' POST helper (application/x-www-form-urlencoded, as WONDER requires)
@@ -90,6 +94,9 @@ R <- rbindlist(lapply(names(SRC), function(s) rbindlist(lapply(names(CAUSES), fu
   wonder(db, cz, AGES[[a]], paste(db, k, a, sep = "_"))[, `:=`(source = s, database = db, measure = k, age = a)]
 }))))))
 fwrite(R, file.path(WDIR, "wonder_long.csv"))
+if (isTRUE(parse_only)) {
+  say("wrote data/wonder/wonder_long.csv (", nrow(R), " rows); parse-only, skipping v1 workbook/figures")
+} else {
 
 # ---- splice: bridged files for 2013-2017, single-race files for 2018-2024 ----------------------
 S <- R[(source == "bridged" & year %in% 2013:2017) | (source == "single" & year %in% 2018:2024)]
@@ -185,3 +192,4 @@ print(r2(W[, .(year, chd_ucd_all, chd_any_all, chd_any_ped, chd_any_adult, cvd_a
                ucd_cvd = chd_ucd_pct_of_cvd_all, any_cvd = chd_any_pct_of_cvd_all, any_heart = chd_any_pct_of_heart_all,
                any_cvd_ped = chd_any_pct_of_cvd_ped, any_cvd_adult = chd_any_pct_of_cvd_adult, ucd_cvd_adult = chd_ucd_pct_of_cvd_adult, fund = CHD_pct_of_CVD_funding)]))
 print(r2(TR[grepl("pct", series)])); print(OV[diff != 0 | is.na(diff)])
+}

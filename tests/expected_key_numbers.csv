@@ -1,0 +1,547 @@
+section,item,window,value,unit
+Funding,CHD dollars FY2013,FY2013,74.209262,"$ millions, nominal"
+Funding,CHD project-years FY2013,FY2013,146,n
+Shares,CHD % of all NIH FY2013,FY2013,0.2819265093996349,percent
+Shares,CHD % of NIH CVD (nested) FY2013,FY2013,2.701825713926502,percent
+Shares,All-CHD % of NIH CVD FY2013,FY2013,2.82700738686205,percent
+Shares,CHD within CVD dollars FY2013,FY2013,70.923229,"$ millions, nominal"
+Age,Pediatric dollars FY2013,FY2013,35.060552,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2013,FY2013,47.24552037722732,percent of CHD $
+Age,Adult dollars FY2013,FY2013,0.12909,"$ millions, nominal"
+Age,Adult share of CHD $ FY2013,FY2013,0.17395402746358,percent of CHD $
+Age,Both dollars FY2013,FY2013,1.663737,"$ millions, nominal"
+Age,Both share of CHD $ FY2013,FY2013,2.241953302271083,percent of CHD $
+Age,Not age-specific dollars FY2013,FY2013,37.355883,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2013,FY2013,50.33857229303803,percent of CHD $
+Funding,CHD dollars FY2014,FY2014,77.03723,"$ millions, nominal"
+Funding,CHD project-years FY2014,FY2014,148,n
+Shares,CHD % of all NIH FY2014,FY2014,0.283402258304561,percent
+Shares,CHD % of NIH CVD (nested) FY2014,FY2014,2.699696784974245,percent
+Shares,All-CHD % of NIH CVD FY2014,FY2014,2.949609899681707,percent
+Shares,CHD within CVD dollars FY2014,FY2014,70.510057,"$ millions, nominal"
+Age,Pediatric dollars FY2014,FY2014,34.041609,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2014,FY2014,44.18851638357195,percent of CHD $
+Age,Adult dollars FY2014,FY2014,0,"$ millions, nominal"
+Age,Adult share of CHD $ FY2014,FY2014,0,percent of CHD $
+Age,Both dollars FY2014,FY2014,3.003319,"$ millions, nominal"
+Age,Both share of CHD $ FY2014,FY2014,3.898529321472228,percent of CHD $
+Age,Not age-specific dollars FY2014,FY2014,39.992302,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2014,FY2014,51.91295429495584,percent of CHD $
+Funding,CHD dollars FY2015,FY2015,74.259155,"$ millions, nominal"
+Funding,CHD project-years FY2015,FY2015,144,n
+Shares,CHD % of all NIH FY2015,FY2015,0.272256930629026,percent
+Shares,CHD % of NIH CVD (nested) FY2015,FY2015,2.49870841904056,percent
+Shares,All-CHD % of NIH CVD FY2015,FY2015,2.700363425161515,percent
+Shares,CHD within CVD dollars FY2015,FY2015,68.713705,"$ millions, nominal"
+Age,Pediatric dollars FY2015,FY2015,34.381641,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2015,FY2015,46.29953168737242,percent of CHD $
+Age,Adult dollars FY2015,FY2015,0,"$ millions, nominal"
+Age,Adult share of CHD $ FY2015,FY2015,0,percent of CHD $
+Age,Both dollars FY2015,FY2015,2.320338,"$ millions, nominal"
+Age,Both share of CHD $ FY2015,FY2015,3.124649075255435,percent of CHD $
+Age,Not age-specific dollars FY2015,FY2015,37.557176,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2015,FY2015,50.57581923737215,percent of CHD $
+Funding,CHD dollars FY2016,FY2016,90.045675,"$ millions, nominal"
+Funding,CHD project-years FY2016,FY2016,166,n
+Shares,CHD % of all NIH FY2016,FY2016,0.2988129663702786,percent
+Shares,CHD % of NIH CVD (nested) FY2016,FY2016,2.974019471706693,percent
+Shares,All-CHD % of NIH CVD FY2016,FY2016,3.140492801850368,percent
+Shares,CHD within CVD dollars FY2016,FY2016,85.272474,"$ millions, nominal"
+Age,Pediatric dollars FY2016,FY2016,47.628731,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2016,FY2016,52.89396853319163,percent of CHD $
+Age,Adult dollars FY2016,FY2016,0,"$ millions, nominal"
+Age,Adult share of CHD $ FY2016,FY2016,0,percent of CHD $
+Age,Both dollars FY2016,FY2016,2.236094,"$ millions, nominal"
+Age,Both share of CHD $ FY2016,FY2016,2.483288619914282,percent of CHD $
+Age,Not age-specific dollars FY2016,FY2016,40.18085,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2016,FY2016,44.62274284689409,percent of CHD $
+Funding,CHD dollars FY2017,FY2017,106.809846,"$ millions, nominal"
+Funding,CHD project-years FY2017,FY2017,214,n
+Shares,CHD % of all NIH FY2017,FY2017,0.3479148353787909,percent
+Shares,CHD % of NIH CVD (nested) FY2017,FY2017,3.353883124390458,percent
+Shares,All-CHD % of NIH CVD FY2017,FY2017,3.5748771899057,percent
+Shares,CHD within CVD dollars FY2017,FY2017,100.207006,"$ millions, nominal"
+Age,Pediatric dollars FY2017,FY2017,51.995825,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2017,FY2017,48.68074147396486,percent of CHD $
+Age,Adult dollars FY2017,FY2017,0,"$ millions, nominal"
+Age,Adult share of CHD $ FY2017,FY2017,0,percent of CHD $
+Age,Both dollars FY2017,FY2017,3.73969,"$ millions, nominal"
+Age,Both share of CHD $ FY2017,FY2017,3.501259612339484,percent of CHD $
+Age,Not age-specific dollars FY2017,FY2017,51.074331,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2017,FY2017,47.81799891369565,percent of CHD $
+Funding,CHD dollars FY2018,FY2018,97.828871,"$ millions, nominal"
+Funding,CHD project-years FY2018,FY2018,207,n
+Shares,CHD % of all NIH FY2018,FY2018,0.2974391984036788,percent
+Shares,CHD % of NIH CVD (nested) FY2018,FY2018,2.825955278881677,percent
+Shares,All-CHD % of NIH CVD FY2018,FY2018,3.048864064721897,percent
+Shares,CHD within CVD dollars FY2018,FY2018,90.676399,"$ millions, nominal"
+Age,Pediatric dollars FY2018,FY2018,46.283381,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2018,FY2018,47.31055416146017,percent of CHD $
+Age,Adult dollars FY2018,FY2018,0.173275,"$ millions, nominal"
+Age,Adult share of CHD $ FY2018,FY2018,0.177120514863143,percent of CHD $
+Age,Both dollars FY2018,FY2018,4.212189,"$ millions, nominal"
+Age,Both share of CHD $ FY2018,FY2018,4.305670664440154,percent of CHD $
+Age,Not age-specific dollars FY2018,FY2018,47.160026,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2018,FY2018,48.20665465923653,percent of CHD $
+Funding,CHD dollars FY2019,FY2019,100.495755,"$ millions, nominal"
+Funding,CHD project-years FY2019,FY2019,216,n
+Shares,CHD % of all NIH FY2019,FY2019,0.2877728557046946,percent
+Shares,CHD % of NIH CVD (nested) FY2019,FY2019,2.907078485503827,percent
+Shares,All-CHD % of NIH CVD FY2019,FY2019,2.957687390152167,percent
+Shares,CHD within CVD dollars FY2019,FY2019,98.776175,"$ millions, nominal"
+Age,Pediatric dollars FY2019,FY2019,42.739871,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2019,FY2019,42.52903120136766,percent of CHD $
+Age,Adult dollars FY2019,FY2019,0.809441,"$ millions, nominal"
+Age,Adult share of CHD $ FY2019,FY2019,0.8054479515080014,percent of CHD $
+Age,Both dollars FY2019,FY2019,5.344667,"$ millions, nominal"
+Age,Both share of CHD $ FY2019,FY2019,5.31830125561025,percent of CHD $
+Age,Not age-specific dollars FY2019,FY2019,51.601776,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2019,FY2019,51.34721959151409,percent of CHD $
+Funding,CHD dollars FY2020,FY2020,100.792765,"$ millions, nominal"
+Funding,CHD project-years FY2020,FY2020,223,n
+Shares,CHD % of all NIH FY2020,FY2020,0.2534848918252647,percent
+Shares,CHD % of NIH CVD (nested) FY2020,FY2020,2.452984390006925,percent
+Shares,All-CHD % of NIH CVD FY2020,FY2020,2.497770700440034,percent
+Shares,CHD within CVD dollars FY2020,FY2020,98.985499,"$ millions, nominal"
+Age,Pediatric dollars FY2020,FY2020,37.964708,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2020,FY2020,37.66610430818125,percent of CHD $
+Age,Adult dollars FY2020,FY2020,0.956768,"$ millions, nominal"
+Age,Adult share of CHD $ FY2020,FY2020,0.9492427358253342,percent of CHD $
+Age,Both dollars FY2020,FY2020,11.461039,"$ millions, nominal"
+Age,Both share of CHD $ FY2020,FY2020,11.37089452799514,percent of CHD $
+Age,Not age-specific dollars FY2020,FY2020,50.41025,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2020,FY2020,50.01375842799828,percent of CHD $
+Funding,CHD dollars FY2021,FY2021,113.409323,"$ millions, nominal"
+Funding,CHD project-years FY2021,FY2021,236,n
+Shares,CHD % of all NIH FY2021,FY2021,0.2745369792647451,percent
+Shares,CHD % of NIH CVD (nested) FY2021,FY2021,2.908187856063373,percent
+Shares,All-CHD % of NIH CVD FY2021,FY2021,2.955181251133395,percent
+Shares,CHD within CVD dollars FY2021,FY2021,111.605884,"$ millions, nominal"
+Age,Pediatric dollars FY2021,FY2021,47.783994,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2021,FY2021,42.13409685903866,percent of CHD $
+Age,Adult dollars FY2021,FY2021,1.140838,"$ millions, nominal"
+Age,Adult share of CHD $ FY2021,FY2021,1.005947280013302,percent of CHD $
+Age,Both dollars FY2021,FY2021,10.878052,"$ millions, nominal"
+Age,Both share of CHD $ FY2021,FY2021,9.591849869344516,percent of CHD $
+Age,Not age-specific dollars FY2021,FY2021,53.606439,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2021,FY2021,47.26810599160353,percent of CHD $
+Funding,CHD dollars FY2022,FY2022,116.325875,"$ millions, nominal"
+Funding,CHD project-years FY2022,FY2022,242,n
+Shares,CHD % of all NIH FY2022,FY2022,0.2750213685628072,percent
+Shares,CHD % of NIH CVD (nested) FY2022,FY2022,2.767090114791324,percent
+Shares,All-CHD % of NIH CVD FY2022,FY2022,2.859443382005582,percent
+Shares,CHD within CVD dollars FY2022,FY2022,112.568824,"$ millions, nominal"
+Age,Pediatric dollars FY2022,FY2022,49.061539,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2022,FY2022,42.17594666706784,percent of CHD $
+Age,Adult dollars FY2022,FY2022,0.968626,"$ millions, nominal"
+Age,Adult share of CHD $ FY2022,FY2022,0.8326831842012794,percent of CHD $
+Age,Both dollars FY2022,FY2022,13.268488,"$ millions, nominal"
+Age,Both share of CHD $ FY2022,FY2022,11.40630835572911,percent of CHD $
+Age,Not age-specific dollars FY2022,FY2022,53.027222,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2022,FY2022,45.58506179300178,percent of CHD $
+Funding,CHD dollars FY2023,FY2023,119.646064,"$ millions, nominal"
+Funding,CHD project-years FY2023,FY2023,244,n
+Shares,CHD % of all NIH FY2023,FY2023,0.2739577023405059,percent
+Shares,CHD % of NIH CVD (nested) FY2023,FY2023,2.608938481337866,percent
+Shares,All-CHD % of NIH CVD FY2023,FY2023,2.680045139492796,percent
+Shares,CHD within CVD dollars FY2023,FY2023,116.471628,"$ millions, nominal"
+Age,Pediatric dollars FY2023,FY2023,47.524179,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2023,FY2023,39.72063719538655,percent of CHD $
+Age,Adult dollars FY2023,FY2023,1.049386,"$ millions, nominal"
+Age,Adult share of CHD $ FY2023,FY2023,0.8770752375105294,percent of CHD $
+Age,Both dollars FY2023,FY2023,12.252334,"$ millions, nominal"
+Age,Both share of CHD $ FY2023,FY2023,10.24048229451158,percent of CHD $
+Age,Not age-specific dollars FY2023,FY2023,58.820165,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2023,FY2023,49.16180527259134,percent of CHD $
+Funding,CHD dollars FY2024,FY2024,117.110509,"$ millions, nominal"
+Funding,CHD project-years FY2024,FY2024,231,n
+Shares,CHD % of all NIH FY2024,FY2024,0.2740848048355743,percent
+Shares,CHD % of NIH CVD (nested) FY2024,FY2024,2.634579503711013,percent
+Shares,All-CHD % of NIH CVD FY2024,FY2024,2.7796163142026,percent
+Shares,CHD within CVD dollars FY2024,FY2024,110.999833,"$ millions, nominal"
+Age,Pediatric dollars FY2024,FY2024,41.761547,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2024,FY2024,35.65994833136623,percent of CHD $
+Age,Adult dollars FY2024,FY2024,0.504677,"$ millions, nominal"
+Age,Adult share of CHD $ FY2024,FY2024,0.4309408304253891,percent of CHD $
+Age,Both dollars FY2024,FY2024,10.876735,"$ millions, nominal"
+Age,Both share of CHD $ FY2024,FY2024,9.28758238084338,percent of CHD $
+Age,Not age-specific dollars FY2024,FY2024,63.96755,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2024,FY2024,54.621528457365,percent of CHD $
+Funding,CHD dollars FY2025,FY2025,104.951853,"$ millions, nominal"
+Funding,CHD project-years FY2025,FY2025,215,n
+Shares,CHD % of all NIH FY2025,FY2025,0.2488981595038219,percent
+Shares,CHD % of NIH CVD (nested) FY2025,FY2025,2.618854649305403,percent
+Shares,All-CHD % of NIH CVD FY2025,FY2025,2.671852264505131,percent
+Shares,CHD within CVD dollars FY2025,FY2025,102.870077,"$ millions, nominal"
+Age,Pediatric dollars FY2025,FY2025,32.96557,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2025,FY2025,31.41018386783509,percent of CHD $
+Age,Adult dollars FY2025,FY2025,0.334601,"$ millions, nominal"
+Age,Adult share of CHD $ FY2025,FY2025,0.3188138088424222,percent of CHD $
+Age,Both dollars FY2025,FY2025,16.39326,"$ millions, nominal"
+Age,Both share of CHD $ FY2025,FY2025,15.6197909149827,percent of CHD $
+Age,Not age-specific dollars FY2025,FY2025,55.258422,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2025,FY2025,52.65121140833978,percent of CHD $
+Funding,CHD dollars FY2026,FY2026,111.291485,"$ millions, nominal"
+Funding,CHD project-years FY2026,FY2026,194,n
+Shares,CHD % of all NIH FY2026,FY2026,0.3055956990977316,percent
+Shares,CHD % of NIH CVD (nested) FY2026,FY2026,2.964735781908423,percent
+Shares,All-CHD % of NIH CVD FY2026,FY2026,2.969111087155663,percent
+Shares,CHD within CVD dollars FY2026,FY2026,111.127485,"$ millions, nominal"
+Age,Pediatric dollars FY2026,FY2026,35.83079,"$ millions, nominal"
+Age,Pediatric share of CHD $ FY2026,FY2026,32.1954460397397,percent of CHD $
+Age,Adult dollars FY2026,FY2026,0,"$ millions, nominal"
+Age,Adult share of CHD $ FY2026,FY2026,0,percent of CHD $
+Age,Both dollars FY2026,FY2026,13.544548,"$ millions, nominal"
+Age,Both share of CHD $ FY2026,FY2026,12.17033630200909,percent of CHD $
+Age,Not age-specific dollars FY2026,FY2026,61.916147,"$ millions, nominal"
+Age,Not age-specific share of CHD $ FY2026,FY2026,55.63421765825122,percent of CHD $
+Funding,Peak CHD $ year,FY2013-2025,2023,fiscal year
+Funding,Peak CHD $ value,FY2023,119.646064,"$ millions, nominal"
+Funding,FY2013-2025 percent change in CHD $,FY2013-2025,41.42689223886906,percent
+Funding,"FY2013-2025 CHD project-years start, end",FY2013-2025,146 to 215,n
+Shares,CHD % of NIH CVD (nested) min FY2013-2025,FY2020,2.452984390006925,percent
+Shares,CHD % of NIH CVD (nested) max FY2013-2025,FY2017,3.353883124390458,percent
+Shares,CHD % of all NIH min FY2013-2025,FY2025,0.2488981595038219,percent
+Shares,CHD % of all NIH max FY2013-2025,FY2017,0.3479148353787909,percent
+Trends,CHD dollars CAGR,FY2013-2025,2.930559429087176,percent per year
+Trends,CHD dollars APC,FY2013-2025,3.920915371542932,percent per year
+Trends,CHD dollars APC 95% CI low,FY2013-2025,2.433028289303896,percent per year
+Trends,CHD dollars APC 95% CI high,FY2013-2025,5.430414701378927,percent per year
+Trends,CHD dollars APC p,FY2013-2025,0.0001077223030487511,slope p-value
+Trends,CHD % of all NIH CAGR,FY2013-2025,-1.032982846761232,percent per year
+Trends,CHD % of all NIH APC,FY2013-2025,-0.9691253963934998,percent per year
+Trends,CHD % of all NIH APC 95% CI low,FY2013-2025,-2.199651220136978,percent per year
+Trends,CHD % of all NIH APC 95% CI high,FY2013-2025,0.2768829263573025,percent per year
+Trends,CHD % of all NIH APC p,FY2013-2025,0.1144805130170718,slope p-value
+Trends,CHD within CVD dollars CAGR,FY2013-2025,3.147422579878412,percent per year
+Trends,CHD within CVD dollars APC,FY2013-2025,4.348578702733108,percent per year
+Trends,CHD within CVD dollars APC 95% CI low,FY2013-2025,2.786024117706654,percent per year
+Trends,CHD within CVD dollars APC 95% CI high,FY2013-2025,5.934887264549138,percent per year
+Trends,CHD within CVD dollars APC p,FY2013-2025,6.625316133891672e-05,slope p-value
+Trends,CHD % of NIH CVD (nested) CAGR,FY2013-2025,-0.2595847396239082,percent per year
+Trends,CHD % of NIH CVD (nested) APC,FY2013-2025,-0.4274455516329545,percent per year
+Trends,CHD % of NIH CVD (nested) APC 95% CI low,FY2013-2025,-1.794850292959149,percent per year
+Trends,CHD % of NIH CVD (nested) APC 95% CI high,FY2013-2025,0.9589988809128869,percent per year
+Trends,CHD % of NIH CVD (nested) APC p,FY2013-2025,0.5094527040037357,slope p-value
+Trends,Total NIH dollars CAGR,FY2013-2025,4.004912333278998,percent per year
+Trends,Total NIH dollars APC,FY2013-2025,4.937895164018213,percent per year
+Trends,Total NIH dollars APC 95% CI low,FY2013-2025,4.034518977022628,percent per year
+Trends,Total NIH dollars APC 95% CI high,FY2013-2025,5.849115752499556,percent per year
+Trends,Total NIH dollars APC p,FY2013-2025,9.252929942216841e-08,slope p-value
+Trends,Total NIH CVD dollars CAGR,FY2013-2025,3.415874408190689,percent per year
+Trends,Total NIH CVD dollars APC,FY2013-2025,4.79652679478324,percent per year
+Trends,Total NIH CVD dollars APC 95% CI low,FY2013-2025,3.669583553131672,percent per year
+Trends,Total NIH CVD dollars APC 95% CI high,FY2013-2025,5.935720505920417,percent per year
+Trends,Total NIH CVD dollars APC p,FY2013-2025,1.184298347745898e-06,slope p-value
+Trends,CVD % of NIH CAGR,FY2013-2025,-0.5663558690389148,percent per year
+Trends,CVD % of NIH APC,FY2013-2025,-0.1347162233567123,percent per year
+Trends,CVD % of NIH APC 95% CI low,FY2013-2025,-0.6412237080404948,percent per year
+Trends,CVD % of NIH APC 95% CI high,FY2013-2025,0.3743733163967367,percent per year
+Trends,CVD % of NIH APC p,FY2013-2025,0.57131465719667,slope p-value
+Trends,RCDC CHD dollars CAGR,FY2016-2025,2.188668472875155,percent per year
+Trends,RCDC CHD dollars APC,FY2016-2025,2.767245571795152,percent per year
+Trends,RCDC CHD dollars APC 95% CI low,FY2016-2025,1.409667290338001,percent per year
+Trends,RCDC CHD dollars APC 95% CI high,FY2016-2025,4.14299784829173,percent per year
+Trends,RCDC CHD dollars APC p,FY2016-2025,0.001476465539064651,slope p-value
+Trends,RCDC CHD % of NIH CAGR,FY2016-2025,-1.555587185294238,percent per year
+Trends,RCDC CHD % of NIH APC,FY2016-2025,-1.72111247246296,percent per year
+Trends,RCDC CHD % of NIH APC 95% CI low,FY2016-2025,-3.288875395566548,percent per year
+Trends,RCDC CHD % of NIH APC 95% CI high,FY2016-2025,-0.127934886949943,percent per year
+Trends,RCDC CHD % of NIH APC p,FY2016-2025,0.03754670089089961,slope p-value
+Age trends,Pediatric $M CAGR,FY2013-2025,-0.5121253132169046,percent per year
+Age trends,Pediatric $M APC,FY2013-2025,0.9212474522393155,percent per year
+Age trends,Pediatric $M APC 95% CI low,FY2013-2025,-1.748902419289267,percent per year
+Age trends,Pediatric $M APC 95% CI high,FY2013-2025,3.66396343765345,percent per year
+Age trends,Pediatric $M APC p,FY2013-2025,0.4674170161745349,slope p-value
+Age trends,Pediatric % of CHD $ CAGR,FY2013-2025,-3.344667279959623,percent per year
+Age trends,Pediatric % of CHD $ APC,FY2013-2025,-2.88649104810047,percent per year
+Age trends,Pediatric % of CHD $ APC 95% CI low,FY2013-2025,-4.254854380784312,percent per year
+Age trends,Pediatric % of CHD $ APC 95% CI high,FY2013-2025,-1.498571442374008,percent per year
+Age trends,Pediatric % of CHD $ APC p,FY2013-2025,0.0008398703199573144,slope p-value
+Age trends,Adult $M CAGR,FY2013-2025,8.260381410610984,percent per year
+Age trends,Adult $M APC,FY2013-2025,13.24269860247709,percent per year
+Age trends,Adult $M APC 95% CI low,FY2013-2025,-4.288337309886514,percent per year
+Age trends,Adult $M APC 95% CI high,FY2013-2025,33.98480839572866,percent per year
+Age trends,Adult $M APC p,FY2013-2025,0.1238784911040905,slope p-value
+Age trends,Adult % of CHD $ CAGR,FY2013-2025,5.178075404511651,percent per year
+Age trends,Adult % of CHD $ APC,FY2013-2025,9.294673342797854,percent per year
+Age trends,Adult % of CHD $ APC 95% CI low,FY2013-2025,-6.581088532171231,percent per year
+Age trends,Adult % of CHD $ APC 95% CI high,FY2013-2025,27.86838803214458,percent per year
+Age trends,Adult % of CHD $ APC p,FY2013-2025,0.2224156144233114,slope p-value
+Age trends,Both $M CAGR,FY2013-2025,21.00362685209205,percent per year
+Age trends,Both $M APC,FY2013-2025,21.40150515803292,percent per year
+Age trends,Both $M APC 95% CI low,FY2013-2025,16.25626339779096,percent per year
+Age trends,Both $M APC 95% CI high,FY2013-2025,26.77446379130695,percent per year
+Age trends,Both $M APC p,FY2013-2025,8.541161912364139e-07,slope p-value
+Age trends,Both % of CHD $ CAGR,FY2013-2025,17.55850499914566,percent per year
+Age trends,Both % of CHD $ APC,FY2013-2025,16.82105062680841,percent per year
+Age trends,Both % of CHD $ APC 95% CI low,FY2013-2025,11.78434379184408,percent per year
+Age trends,Both % of CHD $ APC 95% CI high,FY2013-2025,22.08469814846332,percent per year
+Age trends,Both % of CHD $ APC p,FY2013-2025,8.668784196434666e-06,slope p-value
+Age trends,Not age-specific $M CAGR,FY2013-2025,3.316564383680065,percent per year
+Age trends,Not age-specific $M APC,FY2013-2025,4.199966272232558,percent per year
+Age trends,Not age-specific $M APC 95% CI low,FY2013-2025,2.997083642732923,percent per year
+Age trends,Not age-specific $M APC 95% CI high,FY2013-2025,5.416897130761389,percent per year
+Age trends,Not age-specific $M APC p,FY2013-2025,8.31602000018246e-06,slope p-value
+Age trends,Not age-specific % of CHD $ CAGR,FY2013-2025,0.3750149195087538,percent per year
+Age trends,Not age-specific % of CHD $ APC,FY2013-2025,0.2685223659663949,percent per year
+Age trends,Not age-specific % of CHD $ APC 95% CI low,FY2013-2025,-0.691723226869434,percent per year
+Age trends,Not age-specific % of CHD $ APC 95% CI high,FY2013-2025,1.238052900888853,percent per year
+Age trends,Not age-specific % of CHD $ APC p,FY2013-2025,0.5521152621946019,slope p-value
+Age,Adult share of CHD $ maximum (any FY),FY2021,1.005947280013302,percent of CHD $
+Age,Adult dollars maximum (any FY),FY2021,1.140838,"$ millions, nominal"
+Age,Pediatric share of CHD $ min FY2020-2024,FY2024,35.65994833136623,percent of CHD $
+Age,Pediatric share of CHD $ max FY2020-2024,FY2022,42.17594666706784,percent of CHD $
+IC,NHLBI (HL) share of CHD $ FY2013-2025,FY2013-2025,83.46594398249256,percent of CHD $
+IC,NHLBI (HL) share of CHD $ FY2013-2026,FY2013-2026,83.89749735721843,percent of CHD $
+RCDC,"Share of RCDC dollars outside v2.4 combined, FY2016-2025",FY2016-2025,36.48248097936106,percent of RCDC $
+RCDC,"Share of v2.4 combined dollars also in RCDC, FY2016-2025",FY2016-2025,82.09883100405706,percent of v2.4 $
+RCDC,RCDC CHD dollars minimum FY2016-2025,FY2016,117.124585,"$ millions, nominal"
+RCDC,RCDC CHD dollars maximum FY2016-2025,FY2024,158.683722,"$ millions, nominal"
+RCDC,RCDC % of NIH minimum FY2016-2025,FY2022,0.3251274238316235,percent
+RCDC,RCDC % of NIH maximum FY2016-2025,FY2017,0.4142184302077923,percent
+RCDC,FY2016 both dollars,FY2016,66.89271,$ millions
+RCDC,FY2016 v2.4-only dollars,FY2016,23.152965,$ millions
+RCDC,FY2016 RCDC-only dollars,FY2016,50.231875,$ millions
+RCDC,FY2016 both n,FY2016,131,project-years
+RCDC,FY2016 v2.4-only n,FY2016,35,project-years
+RCDC,FY2016 RCDC-only n,FY2016,108,project-years
+RCDC,FY2016 % of v2.4 projects also in RCDC,FY2016,78.91566265060241,percent
+RCDC,FY2016 % of RCDC projects also in v2.4,FY2016,54.81171548117155,percent
+RCDC,FY2016 intersection-over-union (dollars),FY2016,0.4768596970791121,index 0-1
+RCDC,FY2017 both dollars,FY2017,82.442893,$ millions
+RCDC,FY2017 v2.4-only dollars,FY2017,24.366953,$ millions
+RCDC,FY2017 RCDC-only dollars,FY2017,44.722155,$ millions
+RCDC,FY2017 both n,FY2017,170,project-years
+RCDC,FY2017 v2.4-only n,FY2017,44,project-years
+RCDC,FY2017 RCDC-only n,FY2017,87,project-years
+RCDC,FY2017 % of v2.4 projects also in RCDC,FY2017,79.4392523364486,percent
+RCDC,FY2017 % of RCDC projects also in v2.4,FY2017,66.147859922179,percent
+RCDC,FY2017 intersection-over-union (dollars),FY2017,0.544062590449129,index 0-1
+RCDC,FY2018 both dollars,FY2018,73.465358,$ millions
+RCDC,FY2018 v2.4-only dollars,FY2018,24.363513,$ millions
+RCDC,FY2018 RCDC-only dollars,FY2018,51.395134,$ millions
+RCDC,FY2018 both n,FY2018,162,project-years
+RCDC,FY2018 v2.4-only n,FY2018,45,project-years
+RCDC,FY2018 RCDC-only n,FY2018,92,project-years
+RCDC,FY2018 % of v2.4 projects also in RCDC,FY2018,78.26086956521739,percent
+RCDC,FY2018 % of RCDC projects also in v2.4,FY2018,63.77952755905512,percent
+RCDC,FY2018 intersection-over-union (dollars),FY2018,0.4923159514449435,index 0-1
+RCDC,FY2019 both dollars,FY2019,82.388224,$ millions
+RCDC,FY2019 v2.4-only dollars,FY2019,18.107531,$ millions
+RCDC,FY2019 RCDC-only dollars,FY2019,54.646695,$ millions
+RCDC,FY2019 both n,FY2019,181,project-years
+RCDC,FY2019 v2.4-only n,FY2019,35,project-years
+RCDC,FY2019 RCDC-only n,FY2019,96,project-years
+RCDC,FY2019 % of v2.4 projects also in RCDC,FY2019,83.79629629629629,percent
+RCDC,FY2019 % of RCDC projects also in v2.4,FY2019,65.34296028880867,percent
+RCDC,FY2019 intersection-over-union (dollars),FY2019,0.5310488779827829,index 0-1
+RCDC,FY2020 both dollars,FY2020,85.541975,$ millions
+RCDC,FY2020 v2.4-only dollars,FY2020,15.25079,$ millions
+RCDC,FY2020 RCDC-only dollars,FY2020,53.176516,$ millions
+RCDC,FY2020 both n,FY2020,185,project-years
+RCDC,FY2020 v2.4-only n,FY2020,38,project-years
+RCDC,FY2020 RCDC-only n,FY2020,88,project-years
+RCDC,FY2020 % of v2.4 projects also in RCDC,FY2020,82.95964125560538,percent
+RCDC,FY2020 % of RCDC projects also in v2.4,FY2020,67.76556776556777,percent
+RCDC,FY2020 intersection-over-union (dollars),FY2020,0.5555781935488807,index 0-1
+RCDC,FY2021 both dollars,FY2021,92.032811,$ millions
+RCDC,FY2021 v2.4-only dollars,FY2021,21.376512,$ millions
+RCDC,FY2021 RCDC-only dollars,FY2021,45.555427,$ millions
+RCDC,FY2021 both n,FY2021,196,project-years
+RCDC,FY2021 v2.4-only n,FY2021,40,project-years
+RCDC,FY2021 RCDC-only n,FY2021,92,project-years
+RCDC,FY2021 % of v2.4 projects also in RCDC,FY2021,83.05084745762711,percent
+RCDC,FY2021 % of RCDC projects also in v2.4,FY2021,68.05555555555556,percent
+RCDC,FY2021 intersection-over-union (dollars),FY2021,0.5789510630501415,index 0-1
+RCDC,FY2022 both dollars,FY2022,99.407384,$ millions
+RCDC,FY2022 v2.4-only dollars,FY2022,16.918491,$ millions
+RCDC,FY2022 RCDC-only dollars,FY2022,38.111865,$ millions
+RCDC,FY2022 both n,FY2022,206,project-years
+RCDC,FY2022 v2.4-only n,FY2022,36,project-years
+RCDC,FY2022 RCDC-only n,FY2022,89,project-years
+RCDC,FY2022 % of v2.4 projects also in RCDC,FY2022,85.12396694214875,percent
+RCDC,FY2022 % of RCDC projects also in v2.4,FY2022,69.83050847457628,percent
+RCDC,FY2022 intersection-over-union (dollars),FY2022,0.6436728742598797,index 0-1
+RCDC,FY2023 both dollars,FY2023,104.138939,$ millions
+RCDC,FY2023 v2.4-only dollars,FY2023,15.507125,$ millions
+RCDC,FY2023 RCDC-only dollars,FY2023,54.520929,$ millions
+RCDC,FY2023 both n,FY2023,204,project-years
+RCDC,FY2023 v2.4-only n,FY2023,40,project-years
+RCDC,FY2023 RCDC-only n,FY2023,93,project-years
+RCDC,FY2023 % of v2.4 projects also in RCDC,FY2023,83.60655737704919,percent
+RCDC,FY2023 % of RCDC projects also in v2.4,FY2023,68.68686868686869,percent
+RCDC,FY2023 intersection-over-union (dollars),FY2023,0.5979258021639037,index 0-1
+RCDC,FY2024 both dollars,FY2024,101.350585,$ millions
+RCDC,FY2024 v2.4-only dollars,FY2024,15.759924,$ millions
+RCDC,FY2024 RCDC-only dollars,FY2024,57.333137,$ millions
+RCDC,FY2024 both n,FY2024,205,project-years
+RCDC,FY2024 v2.4-only n,FY2024,26,project-years
+RCDC,FY2024 RCDC-only n,FY2024,104,project-years
+RCDC,FY2024 % of v2.4 projects also in RCDC,FY2024,88.74458874458874,percent
+RCDC,FY2024 % of RCDC projects also in v2.4,FY2024,66.34304207119742,percent
+RCDC,FY2024 intersection-over-union (dollars),FY2024,0.5809932738966026,index 0-1
+RCDC,FY2025 both dollars,FY2025,88.675619,$ millions
+RCDC,FY2025 v2.4-only dollars,FY2025,16.276234,$ millions
+RCDC,FY2025 RCDC-only dollars,FY2025,53.646607,$ millions
+RCDC,FY2025 both n,FY2025,187,project-years
+RCDC,FY2025 v2.4-only n,FY2025,28,project-years
+RCDC,FY2025 RCDC-only n,FY2025,83,project-years
+RCDC,FY2025 % of v2.4 projects also in RCDC,FY2025,86.97674418604652,percent
+RCDC,FY2025 % of RCDC projects also in v2.4,FY2025,69.25925925925925,percent
+RCDC,FY2025 intersection-over-union (dollars),FY2025,0.5591203029335846,index 0-1
+Shares,Pooled CHD % of NIH CVD FY2013-2015,FY2013-2015,2.631192973901738,percent
+Shares,Pooled CHD % of NIH FY2013-2015,FY2013-2015,0.2791581922200183,percent
+Shares,Pooled CHD % of NIH CVD FY2023-2025,FY2023-2025,2.620598540047661,percent
+Shares,Pooled CHD % of NIH FY2023-2025,FY2023-2025,0.2657811132618536,percent
+Mortality,"CHD underlying-cause share of CVD deaths, all ages 2013",2013,0.3372127314604547,percent
+Mortality,"CHD underlying-cause share of CVD deaths, all ages 2024",2024,0.2836673956543971,percent
+Mortality,"CHD underlying-cause share of CVD deaths, all ages min 2013-2024",2020,0.2539990076317841,percent
+Mortality,"CHD underlying-cause share of CVD deaths, all ages max 2013-2024",2013,0.3372127314604547,percent
+Mortality,"CHD any-mention share of CVD deaths, all ages 2013",2013,0.532198838544784,percent
+Mortality,"CHD any-mention share of CVD deaths, all ages 2024",2024,0.5136066298605338,percent
+Mortality,"CHD any-mention share of CVD deaths, all ages min 2013-2024",2020,0.4582722053128215,percent
+Mortality,"CHD any-mention share of CVD deaths, all ages max 2013-2024",2013,0.532198838544784,percent
+Mortality,"CHD underlying-cause share of CVD deaths, children (0-17) 2013",2013,58.49399781738814,percent
+Mortality,"CHD underlying-cause share of CVD deaths, children (0-17) 2024",2024,55.58739255014326,percent
+Mortality,"CHD underlying-cause share of CVD deaths, children (0-17) min 2013-2024",2021,53.31025530073561,percent
+Mortality,"CHD underlying-cause share of CVD deaths, children (0-17) max 2013-2024",2015,59.15138439410284,percent
+Mortality,"CHD any-mention share of CVD deaths, adults 2013",2013,0.2354856673384126,percent
+Mortality,"CHD any-mention share of CVD deaths, adults 2024",2024,0.2730374686749391,percent
+Mortality,"CHD any-mention share of CVD deaths, adults min 2013-2024",2014,0.2233433408647745,percent
+Mortality,"CHD any-mention share of CVD deaths, adults max 2013-2024",2024,0.2730374686749391,percent
+Mortality,"CHD underlying-cause share of CVD deaths, adults 2013",2013,0.1375955489962517,percent
+Mortality,"CHD underlying-cause share of CVD deaths, adults 2024",2024,0.1372232772300409,percent
+Mortality,"CHD underlying-cause share of CVD deaths, adults min 2013-2024",2020,0.1214399679605191,percent
+Mortality,"CHD underlying-cause share of CVD deaths, adults max 2013-2024",2013,0.1375955489962517,percent
+Mortality,Pediatric underlying-cause CHD deaths 2013,2013,1608,deaths
+Mortality,Pediatric underlying-cause CHD deaths 2024,2024,1358,deaths
+Mortality,Adult any-mention CHD deaths 2013,2013,1886,deaths
+Mortality,Adult any-mention CHD deaths 2024,2024,2519,deaths
+Mortality,Adult any-mention CHD deaths percent change 2013-2024,2013-2024,33.56309650053022,percent
+Mortality trends,Pediatric underlying-cause CHD deaths APC,2013-2024,-2.143564522400265,percent per year
+Mortality trends,Pediatric underlying-cause CHD deaths APC 95% CI low,2013-2024,-3.196995496604682,percent per year
+Mortality trends,Pediatric underlying-cause CHD deaths APC 95% CI high,2013-2024,-1.0786698872991,percent per year
+Mortality trends,Pediatric underlying-cause CHD deaths APC p,2013-2024,0.001214661281822386,slope p-value
+Mortality trends,Adult any-mention CHD deaths APC,2013-2024,3.150885515765234,percent per year
+Mortality trends,Adult any-mention CHD deaths APC 95% CI low,2013-2024,2.325583643698281,percent per year
+Mortality trends,Adult any-mention CHD deaths APC 95% CI high,2013-2024,3.982843818763571,percent per year
+Mortality trends,Adult any-mention CHD deaths APC p,2013-2024,6.185286034105834e-06,slope p-value
+Mortality trends,Pediatric UCD CHD share of CVD deaths APC,2013-2024,-0.6233297483567046,percent per year
+Mortality trends,Pediatric UCD CHD share of CVD deaths APC 95% CI low,2013-2024,-1.028394336931293,percent per year
+Mortality trends,Pediatric UCD CHD share of CVD deaths APC 95% CI high,2013-2024,-0.2166073376237532,percent per year
+Mortality trends,Pediatric UCD CHD share of CVD deaths APC p,2013-2024,0.006646320552746587,slope p-value
+Mortality trends,Adult any-mention CHD share of CVD deaths APC,2013-2024,1.621023395695143,percent per year
+Mortality trends,Adult any-mention CHD share of CVD deaths APC 95% CI low,2013-2024,0.9097365865388563,percent per year
+Mortality trends,Adult any-mention CHD share of CVD deaths APC 95% CI high,2013-2024,2.337323882837272,percent per year
+Mortality trends,Adult any-mention CHD share of CVD deaths APC p,2013-2024,0.0004633961303224289,slope p-value
+Mortality trends,All-ages UCD CHD share of CVD deaths APC,2013-2024,-2.163098996298518,percent per year
+Mortality trends,All-ages UCD CHD share of CVD deaths APC 95% CI low,2013-2024,-3.130415977687828,percent per year
+Mortality trends,All-ages UCD CHD share of CVD deaths APC 95% CI high,2013-2024,-1.186122614056728,percent per year
+Mortality trends,All-ages UCD CHD share of CVD deaths APC p,2013-2024,0.0006195613563778014,slope p-value
+Mortality trends,All-ages any-mention CHD share of CVD deaths APC,2013-2024,-0.4742002860264938,percent per year
+Mortality trends,All-ages any-mention CHD share of CVD deaths APC 95% CI low,2013-2024,-1.236394001218266,percent per year
+Mortality trends,All-ages any-mention CHD share of CVD deaths APC 95% CI high,2013-2024,0.2938755479235278,percent per year
+Mortality trends,All-ages any-mention CHD share of CVD deaths APC p,2013-2024,0.1983595939273015,slope p-value
+Mortality trends,CHD % of NIH CVD funding (aligned to mortality years) APC,2013-2024,-0.3117205235453557,percent per year
+Mortality trends,CHD % of NIH CVD funding (aligned to mortality years) APC 95% CI low,2013-2024,-1.940005313083459,percent per year
+Mortality trends,CHD % of NIH CVD funding (aligned to mortality years) APC 95% CI high,2013-2024,1.34360191130678,percent per year
+Mortality trends,CHD % of NIH CVD funding (aligned to mortality years) APC p,2013-2024,0.6816685412864667,slope p-value
+Validation,V3 unweighted Yes|Partly Sensitivity,,0.8790322580645161,
+Validation,V3 unweighted Yes|Partly Sensitivity CI_low,,0.8099792338499885,
+Validation,V3 unweighted Yes|Partly Sensitivity CI_high,,0.9253056812324258,
+Validation,V3 unweighted Yes|Partly Specificity,,0.9178082191780822,
+Validation,V3 unweighted Yes|Partly Specificity CI_low,,0.8320540661871378,
+Validation,V3 unweighted Yes|Partly Specificity CI_high,,0.9617867700265796,
+Validation,V3 unweighted Yes|Partly PPV,,0.9478260869565217,
+Validation,V3 unweighted Yes|Partly PPV CI_low,,0.8908280962827254,
+Validation,V3 unweighted Yes|Partly PPV CI_high,,0.9758717798549231,
+Validation,V3 unweighted Yes|Partly NPV,,0.8170731707317073,
+Validation,V3 unweighted Yes|Partly NPV CI_low,,0.7198761179729022,
+Validation,V3 unweighted Yes|Partly NPV CI_high,,0.8858907829236328,
+Validation,V3 unweighted Yes|Partly Accuracy,,0.8934010152284264,
+Validation,V3 unweighted Yes|Partly Accuracy CI_low,,0.8425375299416088,
+Validation,V3 unweighted Yes|Partly Accuracy CI_high,,0.9292149356830427,
+Validation,V3 unweighted Yes|Partly Kappa,,0.7771373161665679,
+Validation,V3 unweighted Yes|Partly Kappa CI_low,,0.6859054732854514,
+Validation,V3 unweighted Yes|Partly Kappa CI_high,,0.862379897495222,
+Validation,V3 unweighted Yes|Partly TP/FP/FN/TN,,109.0/6.0/15.0/67.0,
+Validation,V3 weighted excluding V7 Yes|Partly Sensitivity,,0.8364052507828088,
+Validation,V3 weighted excluding V7 Yes|Partly Sensitivity CI_low,,0.7784260280617471,
+Validation,V3 weighted excluding V7 Yes|Partly Sensitivity CI_high,,0.898950177839616,
+Validation,V3 weighted excluding V7 Yes|Partly Specificity,,0.9761118265425234,
+Validation,V3 weighted excluding V7 Yes|Partly Specificity CI_low,,0.9492689751058835,
+Validation,V3 weighted excluding V7 Yes|Partly Specificity CI_high,,0.9946805250454607,
+Validation,V3 weighted excluding V7 Yes|Partly PPV,,0.9678564856599574,
+Validation,V3 weighted excluding V7 Yes|Partly PPV CI_low,,0.9296446038371774,
+Validation,V3 weighted excluding V7 Yes|Partly PPV CI_high,,0.9929899136868867,
+Validation,V3 weighted excluding V7 Yes|Partly NPV,,0.8740267559210995,
+Validation,V3 weighted excluding V7 Yes|Partly NPV CI_low,,0.8188938108051754,
+Validation,V3 weighted excluding V7 Yes|Partly NPV CI_high,,0.9262522173995351,
+Validation,V3 weighted excluding V7 Yes|Partly Kappa,,0.8203176010741279,
+Validation,V3 weighted excluding V7 Yes|Partly Kappa CI_low,,0.7480211962503612,
+Validation,V3 weighted excluding V7 Yes|Partly Kappa CI_high,,0.8878294876396016,
+Validation,V4 unweighted Yes|Partly Sensitivity,,1,
+Validation,V4 unweighted Yes|Partly Sensitivity CI_low,,0.9626454664260378,
+Validation,V4 unweighted Yes|Partly Sensitivity CI_high,,1,
+Validation,V4 unweighted Yes|Partly Specificity,,0.9797979797979798,
+Validation,V4 unweighted Yes|Partly Specificity CI_low,,0.9293083037313168,
+Validation,V4 unweighted Yes|Partly Specificity CI_high,,0.9944423963744768,
+Validation,V4 unweighted Yes|Partly PPV,,0.9801980198019802,
+Validation,V4 unweighted Yes|Partly PPV CI_low,,0.930652470326113,
+Validation,V4 unweighted Yes|Partly PPV CI_high,,0.9945527917072783,
+Validation,V4 unweighted Yes|Partly NPV,,1,
+Validation,V4 unweighted Yes|Partly NPV CI_low,,0.9619046107955446,
+Validation,V4 unweighted Yes|Partly NPV CI_high,,0.9999999999999999,
+Validation,V4 unweighted Yes|Partly Accuracy,,0.98989898989899,
+Validation,V4 unweighted Yes|Partly Accuracy CI_low,,0.9639241212907879,
+Validation,V4 unweighted Yes|Partly Accuracy CI_high,,0.9972256119653893,
+Validation,V4 unweighted Yes|Partly Kappa,,0.9797979797979799,
+Validation,V4 unweighted Yes|Partly Kappa CI_low,,0.9495255914935927,
+Validation,V4 unweighted Yes|Partly Kappa CI_high,,1,
+Validation,V4 unweighted Yes|Partly TP/FP/FN/TN,,99.0/2.0/0.0/97.0,
+Validation,V4 unweighted Yes|Partly n answered (Unsure excluded),,198,
+Validation,V4 weighted all strata Yes|Partly Sensitivity,,1,
+Validation,V4 weighted all strata Yes|Partly Sensitivity CI_low,,1,
+Validation,V4 weighted all strata Yes|Partly Sensitivity CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly Specificity,,0.9999127994953846,
+Validation,V4 weighted all strata Yes|Partly Specificity CI_low,,0.9997474495521947,
+Validation,V4 weighted all strata Yes|Partly Specificity CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly PPV,,0.972014882786642,
+Validation,V4 weighted all strata Yes|Partly PPV CI_low,,0.9168396046088064,
+Validation,V4 weighted all strata Yes|Partly PPV CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly NPV,,1,
+Validation,V4 weighted all strata Yes|Partly NPV CI_low,,1,
+Validation,V4 weighted all strata Yes|Partly NPV CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly Accuracy,,0.9999130628072289,
+Validation,V4 weighted all strata Yes|Partly Accuracy CI_low,,0.9997481705133814,
+Validation,V4 weighted all strata Yes|Partly Accuracy CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly Kappa,,0.985765277846337,
+Validation,V4 weighted all strata Yes|Partly Kappa CI_low,,0.9564899508596805,
+Validation,V4 weighted all strata Yes|Partly Kappa CI_high,,1,
+Validation,V4 weighted all strata Yes|Partly TP/FP/FN/TN,,751.5/21.6/0.0/248088.1,
+Validation,Combined estimate Yes|Partly Sensitivity,,0.7763645560168723,
+Validation,Combined estimate Yes|Partly Sensitivity CI_low,,0.7198248202609754,
+Validation,Combined estimate Yes|Partly Sensitivity CI_high,,0.8369294680884944,
+Validation,Combined estimate Yes|Partly Specificity,,0.9820324073909599,
+Validation,Combined estimate Yes|Partly Specificity CI_low,,0.969270049483089,
+Validation,Combined estimate Yes|Partly Specificity CI_high,,0.9928560210150994,
+Validation,Combined estimate Yes|Partly PPV,,0.9807641107561236,
+Validation,Combined estimate Yes|Partly PPV CI_low,,0.9672373679439993,
+Validation,Combined estimate Yes|Partly PPV CI_high,,0.9922198135817263,
+Validation,Combined estimate Yes|Partly NPV,,0.7881993156544054,
+Validation,Combined estimate Yes|Partly NPV CI_low,,0.7135889927442055,
+Validation,Combined estimate Yes|Partly NPV CI_high,,0.8558761969336117,
+Validation,Combined estimate Yes|Partly Accuracy,,0.8707082559238617,
+Validation,Combined estimate Yes|Partly Accuracy CI_low,,0.8280037726931977,
+Validation,Combined estimate Yes|Partly Accuracy CI_high,,0.9096823359734038,
+Validation,Combined estimate Yes|Partly Kappa,,0.7444349367707631,
+Validation,Combined estimate Yes|Partly Kappa CI_low,,0.6640332965578931,
+Validation,Combined estimate Yes|Partly Kappa CI_high,,0.8197141526813656,
+Validation,Combined estimate Yes|Partly TP/FP/FN/TN (weighted),,818.6/16.1/235.8/877.5,
+Validation,V3 age agreement n,,101,
+Validation,V3 age agreement,,0.9306930693069307,
+Validation,V3 age kappa,,0.8653589792420492,
+Validation,V4 age agreement n used,,95,
+Validation,V4 age agreement,,0.6,
+Validation,V4 age kappa,,0.3872008148022406,

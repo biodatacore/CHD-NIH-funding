@@ -13,8 +13,15 @@
 #' reported alongside (CHD projects outside the CV rule are a few % of CHD dollars).
 source("R/00_setup.R")
 C <- readRDS(wp("C.rds"))
-G <- readRDS(file.path(CONFIG$whr_work, "cv", "G.rds"))[, .(FY, FULL_PROJECT_NUM, cv)]
-C <- merge(C, G, by = c("FY", "FULL_PROJECT_NUM"), all.x = TRUE)
+if (!"cv" %in% names(C)) {
+  shipped <- wp("shipped_cv.rds")
+  if (file.exists(shipped)) {
+    G <- readRDS(shipped)[, .(FY, FULL_PROJECT_NUM, cv)]
+  } else {
+    G <- readRDS(file.path(CONFIG$whr_work, "cv", "G.rds"))[, .(FY, FULL_PROJECT_NUM, cv)]
+  }
+  C <- merge(C, G, by = c("FY", "FULL_PROJECT_NUM"), all.x = TRUE)
+}
 C[is.na(cv), cv := FALSE]
 
 D <- C[, .(NIH_USD_B = sum(USD) / 1e9, CVD_projects = sum(cv), CVD_USD_B = sum(USD[cv]) / 1e9,

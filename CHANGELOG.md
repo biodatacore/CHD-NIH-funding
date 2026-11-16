@@ -80,3 +80,22 @@ Python scripts remain in place as an alternative.
   the shipped tables.
 - Default R outputs go to `outputs/v2.4/r/` and do not overwrite the shipped
   Python tables. Comparison: `tests/r_vs_python_report.md`.
+
+## Self-contained R rebuild (2026-11-16)
+
+The repository now ships the de-identified NIH IC project-year universe
+used for the v2.4 denominators and the CHD-signal pool (retrieved 20
+October 2026), plus the CDC WONDER XML behind `data/wonder/wonder_long.csv`,
+so a clone can rebuild every v2.4 result in R from files in the repository.
+
+- Shipped extract: `data/shipped/` (per-year universe and candidate text,
+  MD5 checksums, WONDER XML). No investigator or contact fields; names
+  that appear only as part of NIH abstract text are left verbatim.
+- New or extended R steps: `R/02_load_shipped.R`, `R/13a_v2_pool.R`,
+  `R/04_write_denominators.R`, and the entry point `R/run_all_v2.4.R`.
+  `R/08_wonder.R --parse-only` rebuilds the long table from the shipped XML.
+- Expected-value tests: `tests/test_v24_expected.R`,
+  `tests/expected_values.csv`, `tests/expected_key_numbers.csv`.
+- Classifier rules are unchanged. `Rscript R/run_v2.4_all.R` still starts
+  from already-built intermediates. assemble.py is not run.
+

@@ -1,11 +1,13 @@
 #' config.R -- paths and constants for the NIH congenital heart disease (CHD) funding project.
 #'
-#' Optional rebuilds can reuse cached intermediate files of a WHR-style RePORTER extract
-#' (nih-womens-cv-funding, R/02_build.R): one project table per fiscal year
-#' (proj_{FY}.rds), the FY2020/2024 intramural replacement tables (projz_{FY}.rds), and the
-#' row tables (rows_{FY}.rds). The WHR repositories are read only; nothing in them is run
-#' or modified (in particular, assemble.py is never run).
-#' Set the environment variables below to point at your own copies.
+#' The self-contained path (Rscript R/run_all_v2.4.R) loads the de-identified
+#' extract in data/shipped/ and does not need these caches. Optional rebuilds
+#' from raw ExPORTER / RePORTER files can reuse a WHR-style project cache:
+#' one project table per fiscal year (proj_{FY}.rds), the FY2020/2024
+#' intramural replacement tables (projz_{FY}.rds), and the row tables
+#' (rows_{FY}.rds). Those repositories are read only; nothing in them is run
+#' or modified (in particular, assemble.py is never run). Set the environment
+#' variables below to point at your own copies if you use that path.
 CONFIG <- list(
   whr_work = Sys.getenv("CHD_WHR_WORK", "data/raw/whr_work"),  # WHR R work dir (proj/, rows/)
   raw_dir  = Sys.getenv("CHD_RAW_DIR",  "data/raw"),          # WHR raw inputs ({FY}/...)

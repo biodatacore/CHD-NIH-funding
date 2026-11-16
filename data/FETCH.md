@@ -1,8 +1,18 @@
 # Rebuilding the pool from public NIH files (optional)
 
-The shipped `data/work/v2_pool.pkl.gz` is enough to reproduce the v2.4
-fiscal-year totals. Rebuilding the pool from scratch is optional and requires
-public NIH data that are too large to keep in this repository.
+The de-identified NIH universe in `data/shipped/` is enough to rebuild the
+CHD-signal pool, the yearly denominators, and every v2.4 result:
+
+```bash
+Rscript R/run_all_v2.4.R
+```
+
+Rebuilding that extract from public NIH files is optional and is described
+below. Investigator-name columns are never required and should not be kept
+in any files added to a public copy of this repository.
+
+
+The following steps rebuild the extract from public NIH files if you do not want to use `data/shipped/`.
 
 1. Download NIH ExPORTER project and abstract files for FY2013–2025 from the
    NIH ExPORTER site, and (for FY2026, a partial year) query the RePORTER API
@@ -18,9 +28,8 @@ public NIH data that are too large to keep in this repository.
 Investigator-name columns are never required and should not be kept in any
 files you add to a public copy of this repository.
 
-The compact yearly NIH/CVD denominators used by `R/21_v24_shares.py` live in
-`data/work/nih_cvd_yearly.csv`. Rebuilding those denominators from scratch
-requires the full grant universe and CVD flag used by `R/07_cvd.R`; that
-universe is not shipped. The shipped yearly file is enough to reproduce the
-share and figure tables.
+The compact yearly NIH/CVD denominators used by the share tables live in
+`data/work/nih_cvd_yearly.csv` and are rebuilt from `data/shipped/` by
+`R/run_all_v2.4.R`. The optional raw rebuild above produces the same
+universe when the same cached extract (retrieved 20 October 2026) is used.
 

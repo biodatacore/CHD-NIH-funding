@@ -1,10 +1,19 @@
-# R packages needed to reproduce the v2.4 results
-# (Rscript R/run_v2.4_all.R from the repository root).
+# R packages needed to reproduce the v2.4 results from the shipped extract
+# (Rscript R/run_all_v2.4.R from the repository root).
 # Tested on R 4.5.3 (2026-03-11). R 4.3 or later should work.
 # Arial is used for the figures when the font is installed on the system
 # (cairo devices use fontconfig; PDFs embed Arial when it is available).
 #
 # Install with:
-#   install.packages(c("readxl", "openxlsx"))
+#   install.packages(c("data.table", "stringi", "jsonlite", "ggplot2",
+#                      "readxl", "openxlsx"))
+#
+# xml2 and curl are needed only to refetch CDC WONDER tables
+# (Rscript R/08_wonder.R --refetch). They are not required to parse the
+# shipped XML.
+data.table
+stringi
+jsonlite
+ggplot2
 readxl
 openxlsx

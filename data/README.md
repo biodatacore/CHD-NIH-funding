@@ -1,5 +1,38 @@
 # Data shipped with this repository
 
+## NIH universe and WONDER XML (self-contained rebuild)
+
+`data/shipped/` holds the de-identified NIH Institute/Center project-year
+universe actually used for the denominators and the CHD-signal pool
+(ExPORTER FY2013–2025 plus the RePORTER API extract for FY2026, retrieved
+20 October 2026), together with candidate title/abstract text and the CDC
+WONDER XML responses behind `data/wonder/wonder_long.csv`.
+
+- `universe/chd_universe_{FY}.csv.gz` — one row per full project number
+  per fiscal year (NIH IC filter already applied): identifiers, IC,
+  activity code, parent-award dollars, RCDC CHD flags, v1 keyword-count
+  features, and the v1 CVD flag (`cv`, the WHR `broad2` definition already
+  applied to this universe). Titles and abstracts are not in this file.
+- `text/chd_text_{FY}.csv.gz` — pooled title + abstract + public-health
+  text for every CHD-signal candidate (the 13a pool, including the extra
+  lesion/PH rows). FY2020/2024 intramural replacement text is already
+  applied (`source` is `api_intramural` or `file`). Abstract text is
+  verbatim from NIH. Diversity-supplement titles use `[NAME]` in place of
+  a personal name.
+- `wonder/*.xml` — raw CDC WONDER XML for the D76/D77 (2013–2017
+  bridged-race) and D158/D157 (2018–2024 single-race) queries. Copied into
+  `data/wonder/` by `R/02_load_shipped.R`.
+- `MD5SUMS` — MD5 checksums of every file under `data/shipped/`, checked
+  by the loader.
+
+Each shipped file is under 20 MB. `Rscript R/run_all_v2.4.R` rebuilds
+`data/work/nih_cvd_yearly.csv`, `rcdc_chd_projects.csv`,
+`v1_keyword_yearly.csv`, `v1_keyword_age.csv`, `v24_cv_flags.csv`,
+`v2_pool.tsv.xz`, and `data/wonder/wonder_long.csv` from this extract and
+then runs the v2.4 pipeline. Investigator and contact fields are not
+shipped.
+
+
 ## Pipeline input for v2.4 fiscal-year totals
 
 `data/work/v2_pool.pkl.gz` is the classified signal pool used by `R/14_v2_run.py`
@@ -74,13 +107,14 @@ names):
   numerators used in the self-check and the v1 comparison sheet.
 - `data/work/v1_expected_*.csv` — v1 ground-truth shares, trends, and
   mortality counts used by the self-check.
-- `data/wonder/wonder_long.csv` — aggregated CDC WONDER death counts (not the
-  raw form or XML caches). 2013–2017 use the bridged-race final files; 2018–
-  2024 use the single-race final files. No refetch is performed.
+- `data/wonder/wonder_long.csv` — aggregated CDC WONDER death counts,
+  rebuilt from the XML in `data/shipped/wonder/` (2013–2017 bridged-race
+  final files; 2018–2024 single-race final files). No refetch is performed.
 
 ## Not included
 
-- Full NIH ExPORTER / RePORTER bulk extracts and any workbook intermediates
-- CDC WONDER raw form and XML caches (the aggregated long series in `data/wonder/wonder_long.csv` is shipped)
+- Raw NIH ExPORTER / RePORTER bulk extracts (the de-identified project-year
+  universe and candidate text in `data/shipped/` are sufficient)
+- CDC WONDER form-default HTML caches (the XML responses are shipped)
 - Older large working pickles and logs
 - Manuscript drafts or correspondence
